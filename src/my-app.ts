@@ -1,15 +1,11 @@
-import {LitElement, html, unsafeCSS} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-import style from "./styles.css?inline";
 
 import "./app-header";
 import "./click-counter";
 
-const cssstyle = unsafeCSS(style);
-
 @customElement('my-app')
 export class MyApp extends LitElement {
-  static styles = [cssstyle];
 
   @property()
   pageName = "Blog"
@@ -23,7 +19,6 @@ export class MyApp extends LitElement {
   }
 
   render() {
-    console.log(cssstyle);
     return html`
       <app-header></app-header>
       <click-counter></click-counter>

@@ -1,0 +1,10 @@
+
+/* Use :host for variables */
+:host {
+  --primary: orange;
+}
+
+.even {
+  color: red;
+}
+
