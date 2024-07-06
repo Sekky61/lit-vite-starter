@@ -1,7 +1,6 @@
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
-import "./app-header";
 import "./click-counter";
 
 @customElement('my-app')
@@ -20,7 +19,7 @@ export class MyApp extends LitElement {
 
   render() {
     return html`
-      <app-header></app-header>
+      <header>${this.pageName}</header>
       <click-counter></click-counter>
       <footer>Your footer here.</footer>
     `;

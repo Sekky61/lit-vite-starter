@@ -18,7 +18,7 @@ class ClickCounter extends LitElement {
   @state()
   private counter = 0
 
-  clickHandler() {
+  private clickHandler() {
     this.counter++;
   }
 
