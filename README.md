@@ -2,6 +2,8 @@
 [WIP] Project starter for Lit with Vite
 
 This project is a simple starting point for an app using [Lit](https://lit.dev/) web components and [TypeScript](https://www.typescriptlang.org/).
+It is suitable for a *Single Page Application*.
+It is unopinionated: bring your own testing and formatting.
 
 ## Instalation
 

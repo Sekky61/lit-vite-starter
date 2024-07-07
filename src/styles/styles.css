@@ -1,6 +1,15 @@
 
 /* Define some utilities here. Import them from styles.ts, see the provided example. */
 
+:root {
+  --background: #ddd;
+}
+
+body {
+  margin: 0;
+  min-width: 100vh;
+}
+
 .container {
   width: 300px;
 }
