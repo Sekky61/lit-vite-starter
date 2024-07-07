@@ -9,19 +9,20 @@ export class MyApp extends LitElement {
   @property()
   pageName = "Blog"
 
-  articleTemplate() {
-    return html`<article>haha</article>`;
-  }
-
   footerTemplate() {
-    return html`<footer>Your footer here.</footer>`;
+    return html`
+      <footer>
+        Your footer here.
+        <img src="/rectangle.svg" />
+      </footer>`;
   }
 
   render() {
     return html`
       <header>${this.pageName}</header>
       <click-counter></click-counter>
-      <footer>Your footer here.</footer>
+      ${this.footerTemplate()}
     `;
   }
 }
+
